@@ -1,0 +1,8 @@
+def delete(request, cat_id):
+    People = People.objects.get(id=cat_id)
+    people.delete()
+    return redirect('/')
+
+<div class="delete">
+	<p><a href="{% url 'delete' people.id %}">삭제</a></p>  
+</div>
